@@ -4,10 +4,13 @@
     <artifactId>selenium-jenkins</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-    <profiles>
-        <profile>
-            <id>Regression</id>
+
             <build>
                 <plugins>
                     <plugin>
@@ -33,9 +36,7 @@
 
                 </plugins>
             </build>
-        </profile>
 
-    </profiles>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
